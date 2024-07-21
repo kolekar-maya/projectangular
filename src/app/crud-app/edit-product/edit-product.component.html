@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="row">
+        <form [formGroup]="productFrom" (ngSubmit)="onSubmitForm()">
+            <div class="row">
+                <h3>Edit Product Details</h3> <br>
+            </div> <br>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label>Product Name</label>
+                        <span class="p-float-label">
+                            <input id="float-input" type="text" pInputText formControlName="name">
+                        </span>
+                        <span *ngIf="name.invalid && (name.dirty || name.touched)" style="color: red;">
+                            <div *ngIf="name.errors?.['required']">Product name is required</div>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="float-input">Product Price</label>
+                        <span class="p-float-label">
+                            <input id="float-input" type="text" pInputText formControlName="value">
+                        </span>
+                        <span *ngIf="value.invalid && (value.dirty || value.touched)" style="color: red;">
+                            <div *ngIf="value.errors?.['required']">Product price is required</div>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="float-input">Product Category</label>
+                        <span class="p-float-label">
+                            <input id="float-input" type="text" pInputText formControlName="productCategory">
+                        </span>
+                        <span *ngIf="productCategory.invalid && (productCategory.dirty || productCategory.touched)"
+                            style="color: red;">
+                            <div *ngIf="productCategory.errors?.['required']">Product Category is required</div>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="float-input">Product Description</label>
+                        <span class="p-float-label">
+                            <input id="float-input" type="text" pInputText formControlName="productDescription">
+                        </span>
+                        <span
+                            *ngIf="productDescription.invalid && (productDescription.dirty || productDescription.touched)"
+                            style="color: red;">
+                            <div *ngIf="productDescription.errors?.['required']">Product Description is required</div>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="float-input">Product Quantity</label>
+                        <span class="p-float-label">
+                            <input id="float-input" type="number" pInputText formControlName="productQuantity">
+                        </span>
+                        <span *ngIf="productQuantity.invalid && (productQuantity.dirty || productQuantity.touched)"
+                            style="color: red;">
+                            <div *ngIf="productQuantity.errors?.['required']">Product Quantity is required</div>
+                        </span>
+                    </div>
+                </div>
+            </div> <br>
+            <div class="row">
+                <div class="col-sm-3">
+                    <button type="submit" class="btn btn-primary">Save Edit Data</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

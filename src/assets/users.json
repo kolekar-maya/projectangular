@@ -1,0 +1,21 @@
+{
+    "response_massege":"data get successfully",
+    "response_data": [
+        {
+            "id": 1,
+            "firstName": "Sushant",
+            "lastName": "kharat",
+            "university": "At Post Phondshiras",
+            "email": "sushantkharat987@gmail.com",
+            "phone": "8530604363"
+        },
+        {
+            "id": 2,
+            "firstName": "Maya",
+            "lastName": "Kolekar",
+            "university": "At Post Mumbai ",
+            "email": "mayakolekar02@gmail.com",
+            "phone": "9876543210"
+        }
+    ]
+}

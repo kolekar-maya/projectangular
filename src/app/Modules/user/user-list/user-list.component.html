@@ -1,0 +1,27 @@
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Address</th>
+                <th scope="col">Action</th>
+                <th><button class="btn btn-primary" (click)="addNewUser()">Add New User</button></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let userList of userDataList">
+                <td>{{userList.fname}}</td>
+                <td>{{userList.email}}</td>
+                <td>{{userList.address}}</td>
+                <td>
+                    <div>
+                        <button type="button" class="btn btn-primary"
+                            (click)="onEdit(userList.id, userList)">Edit</button>
+                        <button type="button" class="btn btn-danger" (click)="onDelete(userList.id)">Delete</button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
