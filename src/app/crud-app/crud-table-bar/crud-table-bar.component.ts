@@ -6,7 +6,8 @@ import { MessageService } from 'primeng/api';
 @Component({
   selector: 'app-crud-table-bar',
   templateUrl: './crud-table-bar.component.html',
-  styleUrls: ['./crud-table-bar.component.css']
+  styleUrls: ['./crud-table-bar.component.css'],
+
 })
 export class CrudTableBarComponent implements OnInit {
   product: [] = [];
@@ -23,9 +24,9 @@ export class CrudTableBarComponent implements OnInit {
   gradient = false;
   showLegend = true;
   showXAxisLabel = true;
-  xAxisLabel = 'productName';
+  xAxisLabel = 'product Name';
   showYAxisLabel = true;
-  yAxisLabel = 'productPrice';
+  yAxisLabel = 'product Price';
 
   colorScheme = {
     domain: ['#AAAAAA']

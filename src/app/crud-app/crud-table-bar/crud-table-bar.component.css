@@ -1,0 +1,21 @@
+th, td, tr{
+    border: 2px solid lightblue;
+ text-align: center;
+    /* color: #ffff; */
+}
+td{
+    color: #ffff;
+}
+
+/* yAxisLabel{
+   width: 1135px;
+            height: 400px;
+            margin-top: 86px;
+            border: 1px solid;
+} */
+
+.mainpage{
+    background-image: url(../../../assets/table3.jpg)
+    /* background-image: url(../../../assets/T2.jpg) */
+
+}

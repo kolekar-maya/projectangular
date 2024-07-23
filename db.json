@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "name": "Tshart",
+      "value": "200",
+      "productCategory": "men",
+      "productDescription": "Tshart",
+      "productQuantity": 2
+    },
+    {
+      "id": "2",
+      "name": "top",
+      "value": "500",
+      "productCategory": "women",
+      "productDescription": "silk",
+      "productQuantity": 3
+    },
+    {
+      "name": "topsf",
+      "value": "699",
+      "productCategory": "abc",
+      "productDescription": "vtf",
+      "productQuantity": 2,
+      "id": "3"
+    }
+  ]
+}
