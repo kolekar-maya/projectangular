@@ -1,45 +1,47 @@
 <div class="mainpage">
     <div class="container">
-        <label style="margin-left: 41%;
+        <div>
+
+            <label style="margin-left: 41%;
     font-weight: bold;
     font-size: larger;"> Product Table </label>
-        <p-table [value]="product" [tableStyle]="{'min-width': '50rem'}">
+            <p-table [value]="product" [tableStyle]="{'min-width': '50rem'}">
 
-            <ng-template pTemplate="header">
-                <div style="display: flex;">
-                    <button pButton type="button" label="Add Products" (click)="addNewProduct()"
-                        class="p-button-raised"></button>
-                </div>
+                <ng-template pTemplate="header">
+                    <div style="display: flex;">
+                        <button pButton type="button" label="Add Products" (click)="addNewProduct()"
+                            class="p-button-raised"></button>
+                    </div>
 
-                <tr style="background-color: aqua;">
-                    <th>Sr No.</th>
-                    <th>Name</th>
-                    <th>Category</th>
-                    <th>Price</th>
-                    <th>Description</th>
-                    <th>Quantity</th>
-                    <th>Action</th>
+                    <tr style="background-color: aqua;">
+                        <th>Sr No.</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Action</th>
 
-                </tr>
-                <!-- Maya -->
-            </ng-template>
-            <ng-template pTemplate="body" let-product>
-                <tr>
-                    <td>{{product.id}}</td>
-                    <td>{{product.name}}</td>
-                    <td>{{product.productCategory}}</td>
-                    <td>{{product.value}}</td>
-                    <td>{{product.productDescription}}</td>
-                    <td>{{product.productQuantity}}</td>
-                    <td>
-                        <button pButton type="button" label="Edit" class="p-button-rounded"
-                            (click)="onEditProductData(product.id, product)"></button>
-                        <button pButton type="button" label="Delete" class="p-button-danger"
-                            (click)="deleteProduct(product.id)"></button>
-                    </td>
-                </tr>
-            </ng-template>
-        </p-table>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-product>
+                    <tr>
+                        <td>{{product.id}}</td>
+                        <td>{{product.name}}</td>
+                        <td>{{product.productCategory}}</td>
+                        <td>{{product.value}}</td>
+                        <td>{{product.productDescription}}</td>
+                        <td>{{product.productQuantity}}</td>
+                        <td>
+                            <button pButton type="button" label="Edit" class="p-button-rounded"
+                                (click)="onEditProductData(product.id, product)"></button>
+                            <button pButton type="button" label="Delete" class="p-button-danger"
+                                (click)="deleteProduct(product.id)"></button>
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
     </div>
     <br>
     <br>

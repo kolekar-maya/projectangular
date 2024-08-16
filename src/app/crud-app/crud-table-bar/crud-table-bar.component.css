@@ -4,7 +4,7 @@ th, td, tr{
     /* color: #ffff; */
 }
 td{
-    color: #ffff;
+    color: #0b0b0b;
 }
 
 /* yAxisLabel{
@@ -15,7 +15,7 @@ td{
 } */
 
 .mainpage{
-    background-image: url(../../../assets/table3.jpg)
+    /* background-image: url(../../../assets/table3.jpg) */
     /* background-image: url(../../../assets/T2.jpg) */
 
 }

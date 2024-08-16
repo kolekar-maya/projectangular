@@ -11,7 +11,6 @@ import { MessageService } from 'primeng/api';
 })
 export class CrudTableBarComponent implements OnInit {
   product: [] = [];
-
   names: any[] | undefined;
 
   multi: any[] | undefined;
