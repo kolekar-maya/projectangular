@@ -46,16 +46,31 @@
     <br>
 
     <div class="container">
-        <label style="font-size: larger;
+        <!-- <label  style="font-size: larger;
     margin-left: 41%;
-    font-weight: bolder;"> Product Graph </label>
-        <div style="text-align:center">
-            <!-- -->
-            <!-- <h1>{{ title }}</h1> -->
-            <ngx-charts-bar-vertical [results]="names" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis"
-                [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel"
-                [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" (select)="onSelect($event)">
-            </ngx-charts-bar-vertical>
+    font-weight: bolder;"> Product Graph </label>-->
+        <div style=" margin-left: 161px;
+    margin-top: 20px; display: flex;" >
+            
+            <div>
+                <label style="font-size: larger;
+                margin-left: 41%;
+                font-weight: bolder; "> BAR GRAPH </label>
+                <ngx-charts-bar-vertical [results]="names" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis"
+                    [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel"
+                    [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" (select)="onSelect($event)"
+                    [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel">
+                </ngx-charts-bar-vertical>
+            </div>
+            
+            <div>
+                <label style="font-size: larger;
+    margin-left: 41%;
+    font-weight: bolder;"> PIE GRAPH </label>
+                <ngx-charts-pie-chart [results]="names" [gradient]="gradient" [legend]="showLegend" >
+
+                </ngx-charts-pie-chart>
+            </div>
         </div>
     </div>
 </div>

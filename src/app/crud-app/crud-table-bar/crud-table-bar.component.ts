@@ -27,6 +27,7 @@ export class CrudTableBarComponent implements OnInit {
   showYAxisLabel = true;
   yAxisLabel = 'product Price';
 
+  
   colorScheme = {
     domain: ['#AAAAAA']
   };

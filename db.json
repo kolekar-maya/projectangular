@@ -1,13 +1,20 @@
 {
   "posts": [
     {
-      "id": "2",
+      "id": "1",
       "name": "top",
-      "value": "500",
+      "value": "200",
       "productCategory": "women",
-      "productDescription": "long",
+      "productDescription": "good quality",
       "productQuantity": 3
+    },
+    {
+      "id": "2",
+      "name": "T-shart",
+      "value": "400",
+      "productCategory": "male",
+      "productDescription": "good price",
+      "productQuantity": 4
     }
-  
   ]
 }
